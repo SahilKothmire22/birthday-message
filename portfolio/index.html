@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.6.0/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div id="confetti-container"></div>
+  
+  <section class="intro">
+    <h1 class="title animated bounce">Happy Birthday, Didi! 🎉</h1>
+    <p class="subtitle animated fadeIn">Wishing you love, laughter & joy on your special day!</p>
+    <div class="fun-messages">
+      <p class="message-bubble message-1">Another year older, but still just as weird as ever! 😜</p>
+      <p class="message-bubble message-2">If birthdays were calories, you'd be in trouble today! 🎂</p>
+      <p class="message-bubble message-3">Happy Birthday to my favorite sister! (Okay, you're my only sister, but still!) 💖</p>
+    </div>
+  </section>
+
+  <!-- Modern photo grid -->
+  <section class="photo-grid">
+    <div class="grid-item item1" data-caption="That perfect smile!">
+      <img src="1.jpg" alt="Sister smiling" 
+           onerror="this.onerror=null; this.src='assets/images/7.jpg'; this.onerror=function(){this.src='/api/placeholder/600/600'; this.alt='Image could not be loaded';}">
+    </div>
+    <div class="grid-item item2" data-caption="">
+      <img src="2.jpg" alt="Sister in traditional outfit" 
+           onerror="this.onerror=null; this.src='assets/images/8.jpg'; this.onerror=function(){this.src='/api/placeholder/600/600'; this.alt='Image could not be loaded';}">
+    </div>
+    <div class="grid-item item3" data-caption="">
+      <img src="3.jpg" alt="Sister laughing" 
+           onerror="this.onerror=null; this.src='assets/images/3.jpg'; this.onerror=function(){this.src='/api/placeholder/600/600'; this.alt='Image could not be loaded';}">
+    </div>
+    <div class="grid-item item4" data-caption="Remember this day?">
+      <img src="4.jpg" alt="Sister with style" 
+           onerror="this.onerror=null; this.src='assets/images/4.jpg'; this.onerror=function(){this.src='/api/placeholder/600/600'; this.alt='Image could not be loaded';}">
+    </div>
+    <div class="grid-item item5" data-caption="Always adventurous!">
+      <img src="5.jpg" alt="Sister on adventure" 
+           onerror="this.onerror=null; this.src='assets/images/5.jpg'; this.onerror=function(){this.src='/api/placeholder/600/600'; this.alt='Image could not be loaded';}">
+    </div>
+    <div class="grid-item item5" data-caption="Beautiful couple">
+      <img src="6.jpg" alt="Sister on adventure" 
+           onerror="this.onerror=null; this.src='assets/images/6.jpg'; this.onerror=function(){this.src='/api/placeholder/1080/2160'; this.alt='Image could not be loaded';}">
+    </div>
+  </section>
+
+  <section class="birthday-countdown">
+    <h2 class="glowing-text">Your Birthday is TODAY!</h2>
+    <div class="emoji-container">
+      <div class="party-popper">🎊</div>
+      <div class="cake">🎂</div>
+      <div class="gift">🎁</div>
+    </div>
+  </section>
+
+  <!-- <section class="photo-upload">
+    <h2>Add Your Own Photos!</h2>
+    <input type="file" id="photoUpload" accept="image/*" multiple>
+    <div id="photoGallery" class="photo-gallery"></div>
+  </section> -->
+
+  <section class="video-section">
+    <h2>A Special Video Message For You</h2>
+    <div class="video-container">
+      <video id="birthdayVideo" controls>
+        <source src="assets/videos/7.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section id="uploadBox" class="upload-box">
+    <h2>Upload Your Video Message 🎥</h2>
+    <input type="file" id="videoUpload" accept="video/*" />
+    <div id="previewArea" class="preview-area"></div>
+  </section>
+
+  <div class="floating-balloons">
+    <div class="balloon" style="--color: #FF6B6B">🎈</div>
+    <div class="balloon" style="--color: #4ECDC4">🎈</div>
+    <div class="balloon" style="--color: #FFE66D">🎈</div>
+    <div class="balloon" style="--color: #FF6B6B">🎈</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
